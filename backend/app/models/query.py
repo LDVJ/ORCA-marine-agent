@@ -3,7 +3,7 @@ from sqlalchemy import String, Float, func, DateTime
 from ..db import Base
 
 class Query(Base):
-    __tablename__ = "query"
+    __tablename__ = "queries"
 
     id : Mapped[str] = mapped_column(primary_key=True)
     user_query : Mapped[str] = mapped_column(String)
